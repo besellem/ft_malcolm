@@ -1,0 +1,11 @@
+.vscode/
+.idea/
+
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+.DS_Store
