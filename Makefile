@@ -6,7 +6,7 @@
 #    By: besellem <besellem@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/11 16:55:38 by besellem          #+#    #+#              #
-#    Updated: 2022/08/11 17:04:02 by besellem         ###   ########.fr        #
+#    Updated: 2022/08/11 17:08:52 by besellem         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,8 @@ IFLAGS		:=	-I incs -I libft/incs
 LIBFLAGS 	:=	-L./libft -lft
 
 ## Main srcs
-SRCS		:=	main.c
+SRCS		:=	main.c \
+				mlclm_parser.c
 
 
 ## Objects
