@@ -1,6 +1,9 @@
 .vscode/
 .idea/
 
+ft_malcolm
+.build/
+
 *.o
 *.a
 *.so
