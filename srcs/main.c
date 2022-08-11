@@ -6,7 +6,7 @@
 /*   By: besellem <besellem@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/11 15:24:22 by besellem          #+#    #+#             */
-/*   Updated: 2022/08/11 17:13:40 by besellem         ###   ########.fr       */
+/*   Updated: 2022/08/11 17:22:57 by besellem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,12 @@ int		main(int ac, char **av)
 				  ft_basename(av[0]));
 		return 1;
 	}
-
+	
 	print_args(&mlclm);
+
+	signal(SIGINT, &mlclm_sigint_handler);
+
+	while (1);
 
 	return 0;
 }

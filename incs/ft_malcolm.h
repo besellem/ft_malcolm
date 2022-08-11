@@ -6,7 +6,7 @@
 /*   By: besellem <besellem@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/11 15:24:19 by besellem          #+#    #+#             */
-/*   Updated: 2022/08/11 17:08:21 by besellem         ###   ########.fr       */
+/*   Updated: 2022/08/11 17:25:32 by besellem         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,12 +49,22 @@ typedef struct
 }	t_mlclm;
 
 
+#ifndef __unused
+# if __has_attribute(unused)
+#  define __unused __attribute__((unused))
+# else
+#  define __unused
+# endif
+#endif
+
+
 /*
 ** *****************************************************************************
 **	Prototypes
 ** *****************************************************************************
 */
 int		mlclm_parser(int, char **, const t_parsing_opts *, t_mlclm *);
+void	mlclm_sigint_handler(__unused int);
 
 
 #endif
